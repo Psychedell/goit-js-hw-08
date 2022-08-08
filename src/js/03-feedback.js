@@ -30,8 +30,8 @@ function getInputValue() {
   const inputValueParse = JSON.parse(inputValue);
 
   if (inputValueParse) {
-    emailInput.value = inputValueParse.email;
-    textarea.value = inputValueParse.message;
+    emailInput.value = inputValueParse.email || '';
+    textarea.value = inputValueParse.message || '';
   }
 }
 
