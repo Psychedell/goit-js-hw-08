@@ -38,7 +38,7 @@ function onFormSubmit(e) {
   if (textarea.value === '' || emailInput.value === '') {
     return alert('Required fields');
   }
-  console.log();
+  console.log(formData);
 
   localStorage.removeItem(STORAGE_KEY);
   e.currentTarget.reset();
